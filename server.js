@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
-const usersRoutes = require("./rotas/users");
-const logger = require("./middleware/logger");
+const usersRoutes = require("./routes/users");
+const logger = require("./middleware/auth");
 
 const app = express();
 app.use(express.json());
